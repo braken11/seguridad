@@ -1,0 +1,4 @@
+# Crear un fichero con una contraseña dentro
+md5sum fichero.txt > seguridad.md5
+# Verificar integridad del fichero
+md5sum -c seguridad.md5

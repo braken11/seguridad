@@ -1,0 +1,13 @@
+gpg --gen-key
+# visualizar las claves públicas
+gpg --list-keys
+# visualizar las claves privadas
+gpg --list-secret-keys
+# Para eliminar las claves públicas
+gpg --delete-key
+# eliminar las claves privadas
+gpg --delete-secret-key andrebrambilla@gmail.com
+# Exportar clave
+gpg --armor --output ficherodeclave --export-secret-key CLAVEID
+# Importar clave
+gpg --import ficherodeclave
